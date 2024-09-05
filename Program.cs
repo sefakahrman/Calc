@@ -3,9 +3,9 @@ try
 {
     Console.WriteLine("**CalC**\n");
     Console.Write("Enter a number: ");
-    int inputNumber1 = Convert.ToInt32(Console.ReadLine());
+    int inputNumber1 = Int16.Parse(Console.ReadLine());
     Console.Write("\nSecond Number: ");
-    int inputNumber2 = Convert.ToInt32(Console.ReadLine());
+    int inputNumber2 = Int16.Parse(Console.ReadLine());
     Console.Write("\nEnter the Transaction You Want to Perform (* - / +) : ");
     string operationInput = Console.ReadLine();
 
@@ -45,19 +45,19 @@ catch (FormatException)
 
 
 //Operations Methods
-static void plusMethod(int numberOne, int numberTwo)
+void plusMethod(int numberOne, int numberTwo)
 {
     Console.WriteLine($"\n{numberOne} + {numberTwo} Result: " + (numberOne + numberTwo));
 }
-static void minusMethod(int numberOne, int numberTwo)
+void minusMethod(int numberOne, int numberTwo)
 {
     Console.WriteLine($"\n{numberOne} - {numberTwo} Result: " + (numberOne - numberTwo));
 }
-static void multiplyMethod(int numberOne, int numberTwo)
+void multiplyMethod(int numberOne, int numberTwo)
 {
     Console.WriteLine($"\n{numberOne} * {numberTwo} Result: " + numberOne * numberTwo);
 }
-static void divideMethod(double numberOne, double numberTwo)
+void divideMethod(double numberOne, double numberTwo)
 {
     Console.WriteLine($"\n{numberOne} / {numberTwo} Result: " + numberOne / numberTwo);
 }
